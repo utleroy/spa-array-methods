@@ -8,12 +8,12 @@ console.log("Use the forEach method to add the name of each planet to a div elem
 output.innerHTML += planet + " ";
 })
 
+var firstLetterCaps = planets.map(function(caps) {
+  return caps.charAt(0).toUpperCase() + caps.slice(1);
+})
+console.log("Use the map method to create a new array where the first letter of each planet is capitalized: ",firstLetterCaps)
 
 
-
-
-
-// Use the map method to create a new array where the first letter of each planet is capitalized
 
 // Use the filter method to create a new array that contains planets with the letter 'e'
 
