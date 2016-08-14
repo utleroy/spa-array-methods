@@ -26,21 +26,16 @@ function itemsWithE (array, index) {
 var newArray = planets.filter(itemsWithE);
 console.log("Use the filter method to create a new array that contains planets with the letter 'e'", newArray)
 
-
-
-
 // Use the reduce method to create a sentence from the words in the following array
 
-// var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
-// console.log(words)
-// function getSum(total, num) {
-//   return total + num;
-// }
-// function myFunction(item) {
-//   document.getElementById("output").innerHTML = words.reduce(getSum)
-// }
+var words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
 
-// console.log(numbers.reduce(getSum))
+function buildSentence (wordsBefore, wordsAfter, index, array) {
+  return wordsBefore + " " + wordsAfter;
+}
+
+var sentence = words.reduce(buildSentence)
+console.log("Use the reduce method to create a sentence from the words in the following array: ", sentence)
 
 
 
